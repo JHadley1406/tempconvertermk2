@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Author: Josiah Hadley
+	Class: CS211D
+	Assignment: HW 4
+	File: user_list_layout.xml
+	Purpose: The layout file for the UserListActivity activity
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="none">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/quitNameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userText"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/minorMargin"
+        android:text="@string/quit" />
+
+</RelativeLayout>

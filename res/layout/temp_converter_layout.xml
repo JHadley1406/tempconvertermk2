@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Author: Josiah Hadley
+	Class: CS211D
+	Assignment: HW 4
+	File: temp_converter_layout.xml
+	Purpose: The layout file for the TempConverter activity
+ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/converterGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/minorMargin" >
+
+        <RadioButton
+            android:id="@+id/ctof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/ctof" />
+
+        <RadioButton
+            android:id="@+id/ftoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ftoc" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/tempInput"
+        android:layout_width="@dimen/majorMargin"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/converterGroup"
+        android:layout_marginLeft="@dimen/minorMargin"
+        android:layout_marginTop="@dimen/minorMargin"
+        android:layout_toLeftOf="@+id/converterGroup"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tempInput"
+        android:layout_alignRight="@+id/converterGroup"
+        android:text="@string/calcbutton" />
+
+    <EditText
+        android:id="@+id/tempOutput"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tempInput"
+        android:layout_below="@+id/tempInput"
+        android:layout_marginTop="@dimen/minorMargin"
+        android:layout_toLeftOf="@+id/converterGroup"
+        android:inputType="none"         />
+
+    <TextView
+        android:id="@+id/inputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tempInput"
+        android:layout_alignLeft="@+id/converterGroup"
+        android:layout_marginLeft="@dimen/minorMargin"
+        android:text="@string/celcius"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+	<TextView
+        android:id="@+id/outputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tempOutput"
+        android:layout_alignLeft="@+id/converterGroup"
+        android:layout_marginLeft="@dimen/minorMargin"
+        android:text="@string/farenheit"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	    android:id="@+id/quitConverterButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/outputLabel"
+	    android:layout_alignBottom="@+id/outputLabel"
+	    android:layout_alignLeft="@+id/calcButton"
+	    android:text="@string/quit" />
+	
+</RelativeLayout>

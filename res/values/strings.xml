@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Author: Josiah Hadley
+	Class: CS211D
+	Assignment: HW 4
+	File: strings.xml
+	Purpose: The layout file for the LoginActivity activity
+ -->
+<resources>
+
+    <string name="app_name">Temp Converter Mk2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">Log In</string>
+    <string name="ctof">Celsius to Fahrenheit</string>
+    <string name="ftoc">Fahrenheit to Celsius</string>
+    <string name="calcbutton">Calculate!</string>
+    <string name="celcius">C</string>
+    <string name="farenheit">F</string>
+    <string name="quit">Quit</string>
+    <string name="loginHint">Username</string>
+    <string name="passHint">Password</string>
+
+</resources>

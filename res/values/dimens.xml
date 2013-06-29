@@ -1,0 +1,15 @@
+<resources>
+	<!-- 
+	Author: Josiah Hadley
+	Class: CS211D
+	Assignment: HW 4
+	File: dimens.xml
+	Purpose: The dimensions file
+ -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="minorMargin">15dp</dimen>
+    <dimen name="mediumMargin">30dp</dimen>
+    <dimen name="majorMargin">60dp</dimen>
+</resources>
